@@ -105,7 +105,7 @@ def draw_rotated_text(image, text, position, angle, font, fill=(255, 255, 255)):
     draw = ImageDraw.Draw(image)
     draw.textbbox((0,0), text, font, anchor='la')
     # Create a new image with transparent background to store the text.
-    textimage = Image.new('RGBA', (width, height), (0, 0, 0, 0))
+    textimage = Image.new('RGBA', (240, 240), (0, 0, 0, 0))
     # Render the text.
     textdraw = ImageDraw.Draw(textimage)
     textdraw.text((0, 0), text, font=font, fill=fill)
