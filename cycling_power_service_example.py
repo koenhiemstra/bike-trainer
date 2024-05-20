@@ -16,7 +16,6 @@ async def run(address):
         await asyncio.sleep(60.0)
         await trainer.disable_cycling_power_measurement_notifications()
 
-
 if __name__ == "__main__":
     import os
 
