@@ -33,6 +33,7 @@ except IndexError:
 if display_type in ("square", "rect", "round"):
     disp = ST7789.ST7789(
         height=135 if display_type == "rect" else 240,
+        width=135,
         rotation=0 if display_type == "rect" else 90,
         port=0,
         cs=ST7789.BG_SPI_CS_FRONT,  # BG_SPI_CS_BACK or BG_SPI_CS_FRONT
